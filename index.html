@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Start Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Thin&display=swap">
+	</head>
+	<body>
+		<div class="background-overlay"></div>
+		<div class="container">
+			<div id="weather">
+				<span></span>
+				<span></span>
+			</div>
+			<h3 id="today" class="mb-0"></h3>
+			<h2 id="clock" class="text-center">00:00:00</h2>
+			<form class="hidden" id="login-form">
+				<input
+					id="login-input"
+					type="text"
+					maxlength="15"
+					placeholder="What is your name?"
+					class="input-text"
+				/>
+				<button id="login-button" type="submit" class="button">Log In</button>
+			</form>
+			<h1 class="hidden text-center" id="greetings"></h1>
+			<form id="todo-form" class="text-center">
+				<input
+					type="text"
+					placeholder="Write a To Do and Press Enter"
+					id="todo-input"
+					class="input-text input-todo text-center"
+				/>
+			</form>
+			<div>
+				<ul id="todo-list" class="simple-list"></ul>
+			</div>
+			<div id="quote-box">
+				<p id="quote"></p>
+				<p id="author"></p>
+			</div>
+		</div>
+		<script src="js/greetings.js"></script>
+		<script src="js/clock.js"></script>
+		<script src="js/quotes.js"></script>
+		<script src="js/todo.js"></script>
+		<script src="js/weather.js"></script>
+	</body>
+</html>

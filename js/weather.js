@@ -17,6 +17,9 @@ function onGeoOk(position) {
 }
 
 function onGeoError() {
+	const srcImage = `https://source.unsplash.com/1600x900/?cat`;
+			document.querySelector("body").style.backgroundImage = `url(${srcImage})`;
+
 	alert("Can't find you. No weather for you.");
 }
 

@@ -1,7 +1,7 @@
 let quotes = []
 
 function getQuotes() {
-  fetch('/js/quotes.json')
+  fetch('/quotes.json')
     .then(response => response.json())
     .then(data => {
       quotes = data;

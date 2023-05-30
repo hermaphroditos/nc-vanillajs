@@ -16,8 +16,8 @@
 				<span></span>
 			</div>
 			<h3 id="today" class="mb-0"></h3>
-			<h2 id="clock" class="text-center">00:00:00</h2>
-			<form class="hidden" id="login-form">
+			<h2 id="clock" class="clock-title">00:00:00</h2>
+			<form class="hidden mt-1" id="login-form">
 				<input
 					id="login-input"
 					type="text"
@@ -27,21 +27,34 @@
 				/>
 				<button id="login-button" type="submit" class="button">Log In</button>
 			</form>
-			<h1 class="hidden text-center" id="greetings"></h1>
+			<div class="text-center">
+				<h1 class="hidden text-center mt-1 mb-0" id="greetings"></h1>
+				<button id="logout-button" class="hidden button small-button">Log Out</button>
+			</div>
+			<section class="bookmarks-section hidden">
+				<div>
+					<h3 class="bookmarks-title">Bookmarks</h3>
+					<ul id="bookmarks" class="simple-list"></ul>
+				</div>
+			</section>
 			<form id="todo-form" class="text-center">
 				<input
 					type="text"
 					placeholder="Write a To Do and Press Enter"
 					id="todo-input"
+					maxlength="30"
 					class="input-text input-todo text-center"
 				/>
 			</form>
-			<div>
-				<ul id="todo-list" class="simple-list"></ul>
-			</div>
+			<section class="todo-section">
+				<div>
+					<ul id="todo-list" class="simple-list"></ul>
+				</div>
+			</section>
 			<div id="quote-box">
 				<p id="quote"></p>
-				<p id="author"></p>
+				<p id="author" class="mb-0"></p>
+				<button id="new-quote" class="transparent-button" title="new quote">↺</button>
 			</div>
 		</div>
 		<script src="js/greetings.js"></script>
